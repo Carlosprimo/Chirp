@@ -3,10 +3,9 @@ import Config
 # Configure your database
 config :chirp, Chirp.Repo,
   username: "postgres",
-  password: "postgres",
-  hostname: "localhost",
+  password: "toor",
   database: "chirp_dev",
-  stacktrace: true,
+  hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
@@ -23,7 +22,7 @@ config :chirp, ChirpWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "OpQsOtJ0KUcuu0hJDaWAGF/M7/JKNJsPlJZ9BOdmgqZglzN20D4VF2hVlNlsKTQe",
+  secret_key_base: "651IoAaQAnauB9ek2P/tJUtdGuLYSzMuuJVZzkVGX8xNHUJhCKpMAA4Rfgu8TMma",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}

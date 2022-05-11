@@ -8,8 +8,8 @@ import Config
 config :chirp, Chirp.Repo,
   username: "postgres",
   password: "postgres",
-  hostname: "localhost",
   database: "chirp_test#{System.get_env("MIX_TEST_PARTITION")}",
+  hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox,
   pool_size: 10
 
@@ -17,7 +17,7 @@ config :chirp, Chirp.Repo,
 # you can enable the server option below.
 config :chirp, ChirpWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "l9w9GgFhwzIhkoOJhxAhIWHok2/eX3AEEiZnsjSyIxxVRJTddiF/XtwKHjyBo5PI",
+  secret_key_base: "bE45jcm7/mz+utXF0Y2BXew3VJELBdfrF30Fv7U5ICUIqkPbUE5s9hjsY4MLHniD",
   server: false
 
 # In test we don't send emails.

@@ -1,7 +1,7 @@
 /**
  * @license MIT
  * topbar 1.0.0, 2021-01-06
- * https://buunguyen.github.io/topbar
+ * http://buunguyen.github.io/topbar
  * Copyright (c) 2021 Buu Nguyen
  */
 (function (window, document) {

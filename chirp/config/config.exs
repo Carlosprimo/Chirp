@@ -15,7 +15,7 @@ config :chirp, ChirpWeb.Endpoint,
   url: [host: "localhost"],
   render_errors: [view: ChirpWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Chirp.PubSub,
-  live_view: [signing_salt: "2cvlvGfh"]
+  live_view: [signing_salt: "mTmZo/06"]
 
 # Configures the mailer
 #
@@ -31,10 +31,10 @@ config :swoosh, :api_client, false
 
 # Configure esbuild (the version is required)
 config :esbuild,
-  version: "0.14.29",
+  version: "0.12.18",
   default: [
     args:
-      ~w(js/app.js --bundle --target=es2017 --outdir=../priv/static/assets --external:/fonts/* --external:/images/*),
+      ~w(js/app.js --bundle --target=es2016 --outdir=../priv/static/assets --external:/fonts/* --external:/images/*),
     cd: Path.expand("../assets", __DIR__),
     env: %{"NODE_PATH" => Path.expand("../deps", __DIR__)}
   ]
